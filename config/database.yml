@@ -23,6 +23,11 @@ default: &default
 development:
   <<: *default
   database: ecommerce_development
+  username: postgres
+  password: 85696422a
+  host: 127.0.0.1
+
+
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -57,6 +62,9 @@ development:
 test:
   <<: *default
   database: ecommerce_test
+  username: postgres
+  password: 85696422a
+  host: 127.0.0.1
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
